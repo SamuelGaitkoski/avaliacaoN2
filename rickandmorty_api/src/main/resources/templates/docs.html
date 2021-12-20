@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Documentation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width;initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="icon" th:href="@{/img/logo.png}">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a th:href="@{/}"><img th:src="@{/img/logo.png}" alt="RickAndMortyAPLogo" class="logo"></a>
+
+            <ul>
+                <li><a th:href="@{/docs}" class="docs">Docs</a></li>
+                <li class="aboutText"><a th:href="@{/about}" class="about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <aside>
+            <div class="conteudoAside">
+                <ul class="conteudoAside1">
+                    <a href="">Introdução</a>
+                    <li><a href="">REST</a></li>
+                </ul>
+                <ul class="conteudoAside2">
+                    <a href="">Personagem</a>
+                    <li><a href="">Tabela de personagem</a></li>
+                    <li><a href="">Listar os personagens</a></li>
+                    <li><a href="">Buscar um personagem</a></li>
+                    <li><a href="">Filtrar personagens</a></li>
+                </ul>
+                <ul class="conteudoAside3">
+                    <a href="">Localização</a>
+                    <li><a href="">Tabela de localização</a></li>
+                    <li><a href="">Listar as localizações</a></li>
+                    <li><a href="">Buscar um personagem</a></li>
+                    <li><a href="">Filtrar localizações</a></li>
+                </ul>
+                <ul class="conteudoAside4">
+                    <a href="">Episódio</a>
+                    <li><a href="">Tabela de episódio</a></li>
+                    <li><a href="">Listar os episódios</a></li>
+                    <li><a href="">Buscar um episódio</a></li>
+                    <li><a href="">Filtrar episódios</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="conteudoMain">
+            <div class="conteudoTextos">
+                <div class="introducao">
+                    <h2>Introdução</h2>
+                    <p>
+                        Esta documentação o ajudará a se familiarizar com os recursos da Rick e Morty API
+                        e lhe mostrará como fazer a consulta dos dados, para que você possa obter o máximo 
+                        dela.
+                    </p>
+                </div>
+
+                <div class="rest">
+                    <h3>REST</h3>
+                    <p class="textoRest1">Url base: <a th:href="@{/api}">http://localhost:8080/api</a></p>
+                    <p class="textoRest2">
+                        A Url base contém informações sobre todos os recursos API disponíveis, onde todas as
+                        requisições possíveis são GET. Todas as respostas das requisições GET retornarão dados 
+                        em JSON.
+                    </p>
+                    <p class="textoRest3">
+                        Esses são os três recursos disponíveis:
+                    </p>
+                    <li class="textoRest4">
+                        <a href="">Personagem</a>: Use para listar todos os personagens.
+                    </li>
+                    <li class="textoRest5">
+                        <a href="">Localização</a>: Use para listar todas as localizações.
+                    </li>
+                    <li class="textoRest6">
+                        <a href="">Episódio</a>: Use para listar todos os episódios.
+                    </li>
+                </div>
+
+                <div class="character">
+                    <h3>Personagem</h3>
+                    <p>
+                        Há um total de 30 personagens ordenados por id.
+                    </p>
+                    <h3 class="characterH3">Tabela de personagem</h3>
+                    <table class="characterTable">
+                        <tr>
+                            <th>Campo</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>int</td>
+                            <td>O id do personagem</td>
+                        </tr>
+                        <tr>
+                            <td>Nome</td>
+                            <td>String</td>
+                            <td>O nome do personagem</td>
+                        </tr>
+                        <tr>
+                            <td>Estado</td>
+                            <td>Status</td>
+                            <td>O estado do personagem (Vivo, Morto ou Desconhecido)</td>
+                        </tr>
+                        <tr>
+                            <td>Espécie</td>
+                            <td>String</td>
+                            <td>A espécie do personagem</td>
+                        </tr>
+                        <tr>
+                            <td>Tipo</td>
+                            <td>String</td>
+                            <td>O tipo ou sub-espécie do personagem</td>
+                        </tr>
+                        <tr>
+                            <td>Gênero</td>
+                            <td>Gender</td>
+                            <td>O gênero do personagem (Feminino, Masculino, Sem gênero ou Desconhecido)</td>
+                        </tr>
+                    </table>
+
+                    <div class="enumsCharacter">
+                        <div class="statusBlock">
+                            <h3 class="characterStatusH3">Enumerador de tipo</h3>
+                            <table class="enumStatusTable">
+                                <tr>
+                                    <th>Campo</th>
+                                    <th>Descrição</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Vivo</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Morto</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Desconhecido</td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                        <div class="genderBlock">
+                            <h3 class="characterGenderH3">Enumerador de gênero</h3>
+                            <table class="enumGenderTable">
+                                <tr>
+                                    <th>Campo</th>
+                                    <th>Descrição</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Feminino</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Masculino</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sem gênero</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Desconhecido</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                    <h3 class="characterH3">Listar os personagens</h3>
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="conteudoFooter">
+            <ul class="informacoes-parte1">
+                <a href="#">CHARACTERS: 30</a>
+                <a href="#">LOCATIONS: 22</a>
+                <a href="#">EPISODES: 16</a>
+            </ul>
+            <a href="#" class="serverStatus">SERVER STATUS <div class="bolaVerde"></div></a>
+            <ul class="informacoes-parte2">
+                <a href="https://github.com/SamuelGaitkoski" class="iconGitHuba"><img th:src="@{/img/iconGitHub.png}" alt="ícone Git Hub" 
+                    class="iconGitHub"></a>
+                <a href="https://www.linkedin.com/in/samuel-gaitkoski-375385203/" class="iconLinkedina"><img th:src="@{/img/iconLinkedin.png}" alt="ícone Linkedin" 
+                    class="iconLinkedin"></a>
+                <a href="https://www.instagram.com/sgaitkoski_/" class="iconInstagrama"><img th:src="@{/img/iconInstagram.png}" alt="ícone Instagram" 
+                    class="iconInstagram"></a>
+            </ul>
+            <a href="#" class="netlifya"><img th:src="@{/img/netlify.png}" alt="ícone Netlify" class="netlify"></a>
+            <a href="#" class="by">&#60;&#62; by Samuel Gaitkoski de Almeida 2021</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>About</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width;initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/stylesheet.css}">
+    <link rel="icon" th:href="@{/img/logo.png}">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a th:href="@{/}"><img th:src="@{/img/logo.svg}" alt="RickAndMortyAPLogo" class="logo"></a>
+
+            <ul>
+                <li><a th:href="@{/docs}" class="docs">Docs</a></li>
+                <li class="aboutText"><a th:href="@{/about}" class="about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="sobre">
+            <div class="textosSobre">
+                <h3>O que é isso?</h3>
+                <p>
+                    A API Rick and Morty é uma API REST baseada no programa de televisão Rick and Morty. 
+                    Por meio dela você terá acesso a cerca de centenas de personagens, imagens, locais 
+                    e episódios que estão presentes no programa de TV.
+                </p>
+                <a th:href="@{/docs}">Verifique a documentação para começar</a>
+
+                <h3>Quem é você?</h3>
+                <p>
+                    Eu sou o Samuel, um cara que começou a pouco tempo nessa área do desenvolvimento WEB.
+                </p>
+
+                <h3>Por que você construiu isso?</h3>
+                <p>
+                    Basicamente, porque eu estava sem idéias, e tinha que fazer o trabalho.
+                </p>
+
+                <h3>Questões Técnicas?</h3>
+                <p>
+                    Eu usei Spring Boot e MySQL para construir e manter a API.
+                </p>
+
+                <h3>Como posso contribuir com o projeto?</h3>
+                <p>
+                    Este projeto é inspirado no verdadeiro site de documentação do Rick and Morty API,
+                    então, lá você pode contribuir para o projeto e também contribuir com o mesmo no GitHub.
+                </p>
+                <a href="https://rickandmortyapi.com/">Da uma olhada lá!</a>
+
+                <h3>Copyright?</h3>
+                <p>
+                    COMO ASSIM????????? EXISTE COPYRIGHT???? O QUE É ISSO? TO SABENDO NÃO, SÓ PEGUEI
+                    DO SITE MESMO
+                </p>
+
+                <p>
+                    POR FAVOR RICK AND MORTY, NÃO DA COPYRIGHT NO MEU SITE, É UM SITE PARA UM TRABALHO
+                    DE CURSO TÉCNICO, É EDUCATIVO :D :D :D
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="conteudoFooter">
+            <ul class="informacoes-parte1">
+                <a href="#">CHARACTERS: 30</a>
+                <a href="#">LOCATIONS: 22</a>
+                <a href="#">EPISODES: 16</a>
+            </ul>
+            <a href="#" class="serverStatus">SERVER STATUS <div class="bolaVerde"></div></a>
+            <ul class="informacoes-parte2">
+                <a href="https://github.com/SamuelGaitkoski" class="iconGitHuba"><img th:src="@{/img/iconGitHub.png}" alt="ícone Git Hub" 
+                    class="iconGitHub"></a>
+                <a href="https://www.linkedin.com/in/samuel-gaitkoski-375385203/" class="iconLinkedina"><img th:src="@{/img/iconLinkedin.png}" alt="ícone Linkedin" 
+                    class="iconLinkedin"></a>
+                <a href="https://www.instagram.com/sgaitkoski_/" class="iconInstagrama"><img th:src="@{/img/iconInstagram.png}" alt="ícone Instagram" 
+                    class="iconInstagram"></a>
+            </ul>
+            <a href="#" class="netlifya"><img th:src="@{/img/netlify.png}" alt="ícone Netlify" class="netlify"></a>
+            <a href="#" class="by">&#60;&#62; by Samuel Gaitkoski de Almeida 2021</a>
+        </div>
+    </footer>
+
+</body>
+</html>

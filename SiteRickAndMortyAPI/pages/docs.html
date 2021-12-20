@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Documentation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width;initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/img/logo.png">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="/pages/index.html"><img src="/img/logo.png" alt="RickAndMortyAPLogo" class="logo"></a>
+
+            <ul>
+                <li><a href="/pages/docs.html" class="docs">Docs</a></li>
+                <li class="aboutText"><a href="/pages/about.html" class="about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <aside>
+            <div class="conteudoAside">
+                <ul class="conteudoAside1">
+                    <a href="#introducao">Introdução</a>
+                    <li><a href="#rest">REST</a></li>
+                </ul>
+                <ul class="conteudoAside2">
+                    <a href="#personagem">Personagem</a>
+                    <li><a href="#tabelaDePersonagem">Tabela de personagem</a></li>
+                    <li><a href="#listarOsPersonagens">Listar os personagens</a></li>
+                    <li><a href="#buscarUmPersonagem">Buscar um personagem</a></li>
+                    <li><a href="#filtrarPersonagens">Filtrar personagens</a></li>
+                </ul>
+                <ul class="conteudoAside3">
+                    <a href="#localizacao">Localização</a>
+                    <li><a href="#tabelaDeLocalizacao">Tabela de localização</a></li>
+                    <li><a href="#listarAsLocalizacoes">Listar as localizações</a></li>
+                    <li><a href="#buscarUmaLocalizacao">Buscar uma localização</a></li>
+                    <li><a href="#filtrarLocalizacoes">Filtrar localizações</a></li>
+                </ul>
+                <ul class="conteudoAside4">
+                    <a href="#episodio">Episódio</a>
+                    <li><a href="#tabelaDeEpisodio">Tabela de episódio</a></li>
+                    <li><a href="#listarOsEpisodios">Listar os episódios</a></li>
+                    <li><a href="#buscarUmEpisodio">Buscar um episódio</a></li>
+                    <li><a href="#filtrarEpisodios">Filtrar episódios</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="conteudoMain" id="introducao">
+            <div class="conteudoTextos">
+                <div class="introducao">
+                    <h2>Introdução</h2>
+                    <p id="rest">
+                        Esta documentação o ajudará a se familiarizar com os recursos da Rick e Morty API
+                        e lhe mostrará como fazer a consulta dos dados, para que você possa obter o máximo 
+                        dela.
+                    </p>
+                </div>
+
+                <div class="rest">
+                    <h3>REST</h3>
+                    <p class="textoRest1">Url base: <a href="http://localhost:8080/api">http://localhost:8080/api</a></p>
+                    <p class="textoRest2">
+                        A Url base contém informações sobre todos os recursos API disponíveis, onde todas as
+                        requisições possíveis são GET. Todas as respostas das requisições GET retornarão dados 
+                        em JSON.
+                    </p>
+
+                    <div class="BlocoRest1">
+                        <p class="textoBlocoRest1">GET</p>
+                        <p class="textoBlocoRest2">http://localhost:8080/api</p>
+                    </div>
+                    <div class="BlocoRest2">
+                        <p class="textoBlocoRest3">{</p>
+
+                        <div class="BlocoRestSnippet1">
+                            <p class="textoBlocoRest4">"personagens"</p>
+                            <p class="textodoisPontos1">:</p>
+                            <p class="textoBlocoRest5">"http://localhost:8080/personagem"</p>
+                            <p class="textoBlocoRest6">,</p>
+                        </div>
+
+                        <div class="BlocoRestSnippet2">
+                            <p class="textoBlocoRest7">"localizacao"</p>
+                            <p class="textodoisPontos2">:</p>
+                            <p class="textoBlocoRest8">"http://localhost:8080/localizacao"</p>
+                            <p class="textoBlocoRest9">,</p>
+                        </div>
+
+                        <div class="BlocoRestSnippet3">
+                            <p class="textoBlocoRest10">"episodios"</p>
+                            <p class="textodoisPontos3">:</p>
+                            <p class="textoBlocoRest11">"http://localhost:8080/episodios"</p>
+                        </div>
+
+                        <p class="textoBlocoRest13">}</p>
+                    </div>
+
+                    <p class="textoRest3">
+                        Esses são os três recursos disponíveis:
+                    </p>
+                    <li class="textoRest4">
+                        <a href="">Personagem</a>: Use para listar todos os personagens.
+                    </li>
+                    <li class="textoRest5">
+                        <a href="">Localização</a>: Use para listar todas as localizações.
+                    </li>
+                    <li class="textoRest6" id="personagem">
+                        <a href="">Episódio</a>: Use para listar todos os episódios.
+                    </li>
+                </div>
+
+                <div class="conteudoDocs">
+                    <h3 class="textoPersonagem">Personagem</h3>
+                    <p class="textoCharacter1" id="tabelaDePersonagem">
+                        Há um total de 30 personagens ordenados por id.
+                    </p>
+                    <h3 class="characterH3">Tabela de personagem</h3>
+                    <table class="characterTable">
+                        <tr>
+                            <th>Campo</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>int</td>
+                            <td>O id do personagem</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>String</td>
+                            <td>O nome do personagem</td>
+                        </tr>
+                        <tr>
+                            <td>status</td>
+                            <td>Status</td>
+                            <td>O estado do personagem (Vivo, Morto ou Desconhecido)</td>
+                        </tr>
+                        <tr>
+                            <td>species</td>
+                            <td>String</td>
+                            <td>A espécie do personagem</td>
+                        </tr>
+                        <tr>
+                            <td>type</td>
+                            <td>String</td>
+                            <td>O tipo ou sub-espécie do personagem</td>
+                        </tr>
+                        <tr>
+                            <td>gender</td>
+                            <td>Gender</td>
+                            <td>O gênero do personagem (Feminino, Masculino, Sem gênero ou Desconhecido)</td>
+                        </tr>
+                    </table>
+
+                    <div class="enumsCharacter">
+                        <div class="statusBlock">
+                            <h3 class="characterStatusH3">Enumerador de tipo</h3>
+                            <table class="enumStatusTable">
+                                <tr>
+                                    <th>Campo</th>
+                                    <th>Descrição</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Vivo</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Morto</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Desconhecido</td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                        <div class="genderBlock">
+                            <h3 class="characterGenderH3">Enumerador de gênero</h3>
+                            <table class="enumGenderTable">
+                                <tr>
+                                    <th>Campo</th>
+                                    <th>Descrição</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Feminino</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Masculino</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sem gênero</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td id="listarOsPersonagens">Desconhecido</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                    <h3 class="characterH3">Listar os personagens</h3>
+                    <p class="textoListarPersonagens">
+                        Você pode listar todos os personagens por meio do recurso /personagem
+                    </p>
+
+                    <div class="blocoListarPersonagens1">
+                        <p class="textoBlocoListar1">GET</p>
+                        <p class="textoBlocoListar2">http://localhost:8080/personagem</p>
+                    </div>
+
+                    <div class="snippetListarPersonagens">
+                        <div class="snippetBlocosListarPersonagens">
+                            <p class="textoBlocoListarPersonagens1">[</p>
+                            <p class="textoBlocoListarPersonagens2">{</p>
+
+                            <div class="blocoListarSnippet1">
+                                <p class="textoBlocoListarPersonagens3">"id"</p>
+                                <p class="textodoisPontosListar1">:</p>
+                                <p class="textoBlocoListarPersonagens4">1</p>
+                                <p class="textoBlocoVirgula1">,</p>
+                            </div>
+
+                            <div class="blocoListarSnippet2">
+                                <p class="textoBlocoListarPersonagens5">"name"</p>
+                                <p class="textodoisPontosListar2">:</p>
+                                <p class="textoBlocoListarPersonagens6">"Rick Sanchez"</p>
+                                <p class="textoBlocoVirgula2">,</p>
+                            </div>
+
+                            <div class="blocoListarSnippet3">
+                                <p class="textoBlocoListarPersonagens7">"status"</p>
+                                <p class="textodoisPontosListar3">:</p>
+                                <p class="textoBlocoListarPersonagens8">"Vivo"</p>
+                                <p class="textoBlocoVirgula3">,</p>
+                            </div>
+
+                            <div class="blocoListarSnippet4">
+                                <p class="textoBlocoListarPersonagens9">"species"</p>
+                                <p class="textodoisPontosListar4">:</p>
+                                <p class="textoBlocoListarPersonagens10">"Humano"</p>
+                                <p class="textoBlocoVirgula4">,</p>
+                            </div>
+
+                            <div class="blocoListarSnippet5">
+                                <p class="textoBlocoListarPersonagens11">"type"</p>
+                                <p class="textodoisPontosListar5">:</p>
+                                <p class="textoBlocoListarPersonagens12">" "</p>
+                                <p class="textoBlocoVirgula5">,</p>
+                            </div>
+
+                            <div class="blocoListarSnippet6">
+                                <p class="textoBlocoListarPersonagens13">"gender"</p>
+                                <p class="textodoisPontosListar6">:</p>
+                                <p class="textoBlocoListarPersonagens14">"Male"</p>
+                            </div>
+
+                            <p class="textoBlocoListarPersonagens15">}</p>
+                            <p class="textoBlocoListarPersonagens16">]</p>
+                            <p id="buscarUmPersonagem"></p>
+                        </div>
+                    </div>
+
+                    <h3 class="characterH3Buscar">Buscar um personagem</h3>
+                    <p class="textoBuscarUmPersonagem">
+                        Você pode buscar um personagem utilizando o seu id como parâmetro: /personagem/2
+                    </p>
+
+                    <div class="blocoBuscarUmPersonagem1">
+                        <p class="textoBlocoBuscar1">GET</p>
+                        <p class="textoBlocoBuscar2">http://localhost:8080/personagem/2</p>
+                    </div>
+
+                    <div class="snippetBuscarUmPersonagem">
+                        <div class="snippetBlocosBuscarUmPersonagem">
+                            <p class="textoBlocoBuscarUmPersonagem1">[</p>
+                            <p class="textoBlocoBuscarUmPersonagem2">{</p>
+
+                            <div class="blocoBuscarSnippet1">
+                                <p class="textoBlocoBuscarUmPersonagem3">"id"</p>
+                                <p class="textodoisPontosBuscar1">:</p>
+                                <p class="textoBlocoBuscarUmPersonagem4">2</p>
+                                <p class="textoBlocoBuscarVirgula1">,</p>
+                            </div>
+
+                            <div class="blocoBuscarSnippet2">
+                                <p class="textoBlocoBuscarUmPersonagem5">"name"</p>
+                                <p class="textodoisPontosBuscar2">:</p>
+                                <p class="textoBlocoBuscarUmPersonagem6">"Morty Smith"</p>
+                                <p class="textoBlocoBuscarVirgula2">,</p>
+                            </div>
+
+                            <div class="blocoBuscarSnippet3">
+                                <p class="textoBlocoBuscarUmPersonagem7">"status"</p>
+                                <p class="textodoisPontosBuscar3">:</p>
+                                <p class="textoBlocoBuscarUmPersonagem8">"Vivo"</p>
+                                <p class="textoBlocoBuscarVirgula3">,</p>
+                            </div>
+
+                            <div class="blocoBuscarSnippet4">
+                                <p class="textoBlocoBuscarUmPersonagem9">"species"</p>
+                                <p class="textodoisPontosBuscar4">:</p>
+                                <p class="textoBlocoBuscarUmPersonagem10">"Humano"</p>
+                                <p class="textoBlocoBuscarVirgula4">,</p>
+                            </div>
+
+                            <div class="blocoBuscarSnippet5">
+                                <p class="textoBlocoBuscarUmPersonagem11">"type"</p>
+                                <p class="textodoisPontosBuscar5">:</p>
+                                <p class="textoBlocoBuscarUmPersonagem12">" "</p>
+                                <p class="textoBlocoBuscarVirgula5">,</p>
+                            </div>
+
+                            <div class="blocoBuscarSnippet6">
+                                <p class="textoBlocoBuscarUmPersonagem13">"gender"</p>
+                                <p class="textodoisPontosBuscar6">:</p>
+                                <p class="textoBlocoBuscarUmPersonagem14">"Male"</p>
+                            </div>
+
+                            <p class="textoBlocoBuscarUmPersonagem15">}</p>
+                            <p class="textoBlocoBuscarUmPersonagem16">]</p>
+                            <p id="filtrarPersonagens"></p>
+                        </div>
+                    </div>
+
+                    <h3 class="characterH3Filtrar">Filtrar personagens</h3>
+                    <p class="textoFiltrarPersonagens1">
+                        Você também pode buscar por personagens utilizando outros filtros, como:
+                    </p>
+                    <p class="textoFiltrarPersonagens2">
+                        name: filtra pelo nome fornecido: /personagem/name/Rick Sanchez
+                    </p>
+                    <p class="textoFiltrarPersonagens3" id="localizacao">
+                        status: filtra pelo estado fornecido (Vivo, Morto ou Desconhecido): 
+                        /personagem/status/Vivo
+                    </p>
+
+                    <h3 class="localizacaoH3">Localização</h3>
+                    <p class="textoLocalizacao" id="tabelaDeLocalizacao">
+                        Há um total de 22 localizações ordenadas por id.
+                    </p>
+
+                    <h3 class="tabelaLocalizacaoH3">Tabela de localização</h3>
+                    <table class="localizacaoTable">
+                        <tr>
+                            <th>Campo</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>int</td>
+                            <td>O id da localização</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>String</td>
+                            <td>O nome da localização</td>
+                        </tr>
+                        <tr>
+                            <td>type</td>
+                            <td>String</td>
+                            <td>O tipo de localização</td>
+                        </tr>
+                        <tr>
+                            <td>dimension</td>
+                            <td>String</td>
+                            <td>A dimensão na qual o local está localizado</td>
+                        </tr>
+                    </table>
+
+                    <p id="listarAsLocalizacoes"></p>
+
+                    <h3 class="localizacaoListarH3">Listar as localizações</h3>
+                    <p class="textoListarLocalizacao">
+                        Você pode listar todos as localizações por meio do recurso /localizacao
+                    </p>
+
+                    <div class="blocoListarLocalizacoes1">
+                        <p class="textoBlocoListarLocalizacao1">GET</p>
+                        <p class="textoBlocoListarLocalizacao2">http://localhost:8080/localizacao</p>
+                    </div>
+
+                    <div class="blocoListarLocalizacoes2">
+                        <div class="blocoBlocosListarLocalizacoes">
+                            <p class="textoBlocoListarLocalizacoes1">[</p>
+                            <p class="textoBlocoListarLocalizacoes2">{</p>
+
+                            <div class="blocoListarLocalizacoesSnippet1">
+                                <p class="textoBlocoListarLocalizacoes3">"id"</p>
+                                <p class="textodoisPontosListarLocalizacoes1">:</p>
+                                <p class="textoBlocoListarLocalizacoes4">1</p>
+                                <p class="textoBlocoListarLocalizacoesVirgula1">,</p>
+                            </div>
+
+                            <div class="blocoListarLocalizacoesSnippet2">
+                                <p class="textoBlocoListarLocalizacoes5">"name"</p>
+                                <p class="textodoisPontosListarLocalizacoes2">:</p>
+                                <p class="textoBlocoListarLocalizacoes6">"Terra"</p>
+                                <p class="textoBlocoListarLocalizacoesVirgula2">,</p>
+                            </div>
+
+                            <div class="blocoListarLocalizacoesSnippet3">
+                                <p class="textoBlocoListarLocalizacoes7">"type"</p>
+                                <p class="textodoisPontosListarLocalizacoes3">:</p>
+                                <p class="textoBlocoListarLocalizacoes8">"Planeta"</p>
+                                <p class="textoBlocoListarLocalizacoesVirgula3">,</p>
+                            </div>
+
+                            <div class="blocoListarLocalizacoesSnippet4">
+                                <p class="textoBlocoListarLocalizacoes9">"dimension"</p>
+                                <p class="textodoisPontosListarLocalizacoes4">:</p>
+                                <p class="textoBlocoListarLocalizacoes10">"Dimensão C-137"</p>
+                            </div>
+
+                            <p class="textoBlocoListarLocalizacoes11">}</p>
+                            <p class="textoBlocoListarLocalizacoes12">]</p>
+                            <p id="buscarUmaLocalizacao"></p>
+                        </div>
+                    </div>
+
+                    <h3 class="localizacaoBuscarH3">Buscar uma localização</h3>
+                    <p class="textoBuscarLocalizacao">
+                        Você pode buscar uma localização utilizando o seu id como parâmetro: /localizacao/3
+                    </p>
+
+                    <div class="blocoBuscarUmaLocalizacao1">
+                        <p class="textoBlocoBuscarUmaLocalizacao1">GET</p>
+                        <p class="textoBlocoBuscarUmaLocalizacao2">http://localhost:8080/localizacao/3</p>
+                    </div>
+
+                    <div class="blocoBuscarUmaLocalizacao2">
+                        <div class="blocoBlocosBuscarLocalizacao">
+                            <p class="textoBlocoBuscarUmaLocalizacao1">[</p>
+                            <p class="textoBlocoBuscarUmaLocalizacao2">{</p>
+
+                            <div class="blocoBuscarUmaLocalizacaoSnippet1">
+                                <p class="textoBlocoBuscarUmaLocalizacao3">"id"</p>
+                                <p class="textodoisPontosBuscarUmaLocalizacao1">:</p>
+                                <p class="textoBlocoBuscarUmaLocalizacao4">3</p>
+                                <p class="textoBlocoBuscarUmaLocalizacaoVirgula1">,</p>
+                            </div>
+
+                            <div class="blocoBuscarUmaLocalizacaoSnippet2">
+                                <p class="textoBlocoBuscarUmaLocalizacao5">"name"</p>
+                                <p class="textodoisPontosBuscarUmaLocalizacao2">:</p>
+                                <p class="textoBlocoBuscarUmaLocalizacao6">"Cidadela de Ricks"</p>
+                                <p class="textoBlocoBuscarUmaLocalizacaoVirgula2">,</p>
+                            </div>
+
+                            <div class="blocoBuscarUmaLocalizacaoSnippet3">
+                                <p class="textoBlocoBuscarUmaLocalizacao7">"type"</p>
+                                <p class="textodoisPontosBuscarUmaLocalizacao3">:</p>
+                                <p class="textoBlocoBuscarUmaLocalizacao8">"Estação espacial"</p>
+                                <p class="textoBlocoBuscarUmaLocalizacaoVirgula3">,</p>
+                            </div>
+
+                            <div class="blocoBuscarUmaLocalizacaoSnippet4">
+                                <p class="textoBlocoBuscarUmaLocalizacao9">"dimension"</p>
+                                <p class="textodoisPontosBuscarUmaLocalizacao4">:</p>
+                                <p class="textoBlocoBuscarUmaLocalizacao10">"Desconhecida"</p>
+                            </div>
+
+                            <p class="textoBlocoBuscarUmaLocalizacao11">}</p>
+                            <p class="textoBlocoBuscarUmaLocalizacao12">]</p>
+                            <p id="filtrarLocalizacoes"></p>
+                        </div>
+                    </div>
+
+                    <h3 class="localizacaoH3Filtrar">Filtrar localizações</h3>
+                    <p class="textoFiltrarLocalizacoes1">
+                        Você também pode buscar por localizações utilizando outros filtros, como:
+                    </p>
+                    <p class="textoFiltrarLocalizacoes2">
+                        name: filtra pelo nome fornecido: /localizacao/name/Terra
+                    </p>
+                    <p class="textoFiltrarLocalizacoes3" id="episodio">
+                        type: filtra pelo tipo fornecido: /localizacao/type/Planeta
+                    </p>
+
+                    <h3 class="episodioH3">Episódio</h3>
+                    <p class="textoEpisodio" id="tabelaDeEpisodio">
+                        Há um total de 16 episódios ordenados por id.
+                    </p>
+
+                    <h3 class="tabelaEpisodioH3">Tabela de episódio</h3>
+                    <table class="episodioTable">
+                        <tr>
+                            <th>Campo</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>int</td>
+                            <td>O id do episódio</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>String</td>
+                            <td>O nome do episódio</td>
+                        </tr>
+                        <tr>
+                            <td>air_date</td>
+                            <td>String</td>
+                            <td>A data de transmissão do episódio</td>
+                        </tr>
+                        <tr>
+                            <td>episode</td>
+                            <td>String</td>
+                            <td>O código do episódio</td>
+                        </tr>
+                    </table>
+
+                    <p id="listarOsEpisodios"></p>
+
+                    <h3 class="episodioListarH3">Listar os episódios</h3>
+                    <p class="textoListarEpisodio">
+                        Você pode listar todos os episódios por meio do recurso /episodio
+                    </p>
+
+                    <div class="blocoListarOsEpisodios1">
+                        <p class="textoBlocoListarOsEpisodios1">GET</p>
+                        <p class="textoBlocoListarOsEpisodios2">http://localhost:8080/episodio</p>
+                    </div>
+
+                    <div class="blocoListarOsEpisodios2">
+                        <div class="blocoBlocosListarOsEpisodios">
+                            <p class="textoBlocoListarOsEpisodios1">[</p>
+                            <p class="textoBlocoListarOsEpisodios2">{</p>
+
+                            <div class="blocoListarOsEpisodiosSnippet1">
+                                <p class="textoBlocoListarOsEpisodios3">"id"</p>
+                                <p class="textodoisPontosListarOsEpisodios1">:</p>
+                                <p class="textoBlocoListarOsEpisodios4">1</p>
+                                <p class="textoBlocoListarOsEpisodiosVirgula1">,</p>
+                            </div>
+
+                            <div class="blocoListarOsEpisodiosSnippet2">
+                                <p class="textoBlocoListarOsEpisodios5">"name"</p>
+                                <p class="textodoisPontosListarOsEpisodios2">:</p>
+                                <p class="textoBlocoListarOsEpisodios6">"Pilot"</p>
+                                <p class="textoBlocoListarOsEpisodiosVirgula2">,</p>
+                            </div>
+
+                            <div class="blocoListarOsEpisodiosSnippet3">
+                                <p class="textoBlocoListarOsEpisodios7">"air_date"</p>
+                                <p class="textodoisPontosListarOsEpisodios3">:</p>
+                                <p class="textoBlocoListarOsEpisodios8">"Dezembro 02, 2013"</p>
+                                <p class="textoBlocoListarOsEpisodiosVirgula3">,</p>
+                            </div>
+
+                            <div class="blocoListarOsEpisodiosSnippet4">
+                                <p class="textoBlocoListarOsEpisodios9">"episode"</p>
+                                <p class="textodoisPontosListarOsEpisodios4">:</p>
+                                <p class="textoBlocoListarOsEpisodios10">"S01E01"</p>
+                            </div>
+
+                            <p class="textoBlocoListarOsEpisodios11">}</p>
+                            <p class="textoBlocoListarOsEpisodios12">]</p>
+                            <p id="buscarUmEpisodio"></p>
+                        </div>
+                    </div>
+
+                    <h3 class="episodioBuscarH3">Buscar um episódio</h3>
+                    <p class="textoBuscarEpisodio">
+                        Você pode buscar um episódio utilizando o seu id como parâmetro: /episodio/6
+                    </p>
+
+                    <div class="blocoBuscarUmEpisodio1">
+                        <p class="textoBlocoBuscarUmEpisodio1">GET</p>
+                        <p class="textoBlocoBuscarUmEpisodio2">http://localhost:8080/episodio/6</p>
+                    </div>
+
+                    <div class="blocoBuscarUmEpisodio2">
+                        <div class="blocoBlocosBuscarUmEpisodio">
+                            <p class="textoBlocoBuscarUmEpisodio1">[</p>
+                            <p class="textoBlocoBuscarUmEpisodio2">{</p>
+
+                            <div class="blocoBuscarUmEpisodioSnippet1">
+                                <p class="textoBlocoBuscarUmEpisodio3">"id"</p>
+                                <p class="textodoisPontosBuscarUmEpisodio1">:</p>
+                                <p class="textoBlocoBuscarUmEpisodio4">6</p>
+                                <p class="textoBlocoBuscarUmEpisodioVirgula1">,</p>
+                            </div>
+
+                            <div class="blocoBuscarUmEpisodioSnippet2">
+                                <p class="textoBlocoBuscarUmEpisodio5">"name"</p>
+                                <p class="textodoisPontosBuscarUmEpisodio2">:</p>
+                                <p class="textoBlocoBuscarUmEpisodio6">"The Ricklantis Mixup"</p>
+                                <p class="textoBlocoBuscarUmEpisodioVirgula2">,</p>
+                            </div>
+
+                            <div class="blocoBuscarUmEpisodioSnippet3">
+                                <p class="textoBlocoBuscarUmEpisodio7">"air_date"</p>
+                                <p class="textodoisPontosBuscarUmEpisodio3">:</p>
+                                <p class="textoBlocoBuscarUmEpisodio8">"Setembro 10, 2017"</p>
+                                <p class="textoBlocoBuscarUmEpisodioVirgula3">,</p>
+                            </div>
+
+                            <div class="blocoBuscarUmEpisodioSnippet4">
+                                <p class="textoBlocoBuscarUmEpisodio9">"episode"</p>
+                                <p class="textodoisPontosBuscarUmEpisodio4">:</p>
+                                <p class="textoBlocoBuscarUmEpisodio10">"S03E07"</p>
+                            </div>
+
+                            <p class="textoBlocoBuscarUmEpisodio11">}</p>
+                            <p class="textoBlocoBuscarUmEpisodio12">]</p>
+                            <p id="filtrarEpisodios"></p>
+                        </div>
+                    </div>
+
+                    <h3 class="episodioH3Filtrar">Filtrar episódios</h3>
+                    <p class="textoFiltrarEpisodios1">
+                        Você também pode buscar por episódios utilizando outros filtros, como:
+                    </p>
+                    <p class="textoFiltrarEpisodios2">
+                        name: filtra pelo nome do episódio fornecido: /episodio/name/The Ricklantis Mixup
+                    </p>
+                    <p class="textoFiltrarEpisodios3">
+                        episode: filtra pelo código do episódio fornecido: /episodio/episode/S03E07
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="conteudoFooter">
+            <ul class="informacoes-parte1">
+                <a href="#">CHARACTERS: 30</a>
+                <a href="#">LOCATIONS: 22</a>
+                <a href="#">EPISODES: 16</a>
+            </ul>
+            <a href="#" class="serverStatus">SERVER STATUS <div class="bolaVerde"></div></a>
+            <ul class="informacoes-parte2">
+                <a href="https://github.com/SamuelGaitkoski" class="iconGitHuba"><img src="/img/iconGitHub.png" alt="ícone Git Hub" 
+                    class="iconGitHub"></a>
+                <a href="https://www.linkedin.com/in/samuel-gaitkoski-375385203/" class="iconLinkedina"><img src="/img/iconLinkedin.png" alt="ícone Linkedin" 
+                    class="iconLinkedin"></a>
+                <a href="https://www.instagram.com/sgaitkoski_/" class="iconInstagrama"><img src="/img/iconInstagram.png" alt="ícone Instagram" 
+                    class="iconInstagram"></a>
+            </ul>
+            <a href="https://www.netlify.com/" class="netlifya"><img src="/img/netlify.png" alt="ícone Netlify" class="netlify"></a>
+            <a href="#" class="by">&#60;&#62; by Samuel Gaitkoski de Almeida 2021</a>
+        </div>
+    </footer>
+
+</body>
+</html>

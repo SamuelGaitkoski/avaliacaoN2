@@ -1,0 +1,1494 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,
+    'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+}
+
+header {
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 0px 3px #999;
+    position: fixed;
+    height: 60px;
+}
+
+.menu {
+    align-items: center;
+    list-style: none;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 10px 13px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.docs {
+    color: orange;
+}
+
+.about {
+    color: black;
+}
+
+.menu li a:hover {
+    color: orange;
+}
+
+main {
+    background-color: white;
+    height: 7300px;
+    width: 100%;
+    display: flex;
+}
+
+aside {
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 250px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 0 0;
+    position: fixed;
+    top: 0;
+}
+
+.conteudoAside1 {
+    width: 190px;
+    height: 80px;
+    margin-top: 28px;
+}
+
+.conteudoAside1 a {
+    font-size: 22px;
+    color: #333333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.conteudoAside1 li {
+    list-style-type: none;
+    padding: 6px 0;
+}
+
+.conteudoAside1 li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.conteudoAside1 a:hover {
+    color: orange;
+}
+
+.conteudoAside1 li a:hover {
+    color: orange;
+}
+
+.conteudoAside2 {
+    width: 190px;
+    height: 180px;
+    margin-top: 30px;
+}
+
+.conteudoAside2 a {
+    font-size: 22px;
+    color: #333333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.conteudoAside2 li {
+    list-style-type: none;
+    padding: 6px 0;
+}
+
+.conteudoAside2 li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.conteudoAside2 a:hover {
+    color: orange;
+}
+
+.conteudoAside2 li a:hover {
+    color: orange;
+}
+
+.conteudoAside3 {
+    width: 190px;
+    height: 180px;
+    margin-top: 30px;
+}
+
+.conteudoAside3 a {
+    font-size: 22px;
+    color: #333333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.conteudoAside3 li {
+    list-style-type: none;
+    padding: 6px 0;
+}
+
+.conteudoAside3 li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.conteudoAside3 a:hover {
+    color: orange;
+}
+
+.conteudoAside3 li a:hover {
+    color: orange;
+}
+
+.conteudoAside4 {
+    width: 190px;
+    height: 180px;
+    margin-top: 30px;
+}
+
+.conteudoAside4 li {
+    list-style-type: none;
+    padding: 6px 0;
+}
+
+.conteudoAside4 a {
+    font-size: 22px;
+    color: #333333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.conteudoAside4 li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.conteudoAside4 a:hover {
+    color: orange;
+}
+
+.conteudoAside4 li a:hover {
+    color: orange;
+}
+
+.conteudoMain {
+    width: calc(100% - 250px);
+    height: 7300px;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 0 250px;
+}
+
+.conteudosTextos {
+    display: flex;
+    justify-content: center;
+}
+
+.introducao {
+    width: 820px;
+}
+
+.introducao h2 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 80px;
+}
+
+.introducao p {
+    color: #000000CC;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 11px;
+}
+
+.rest {
+    margin-top: 65px;
+    width: 820px;
+}
+
+.rest h3 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.textoRest1 {
+    color: #333333;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 11px;
+    font-weight: 500;
+}
+
+.rest p a {
+    color: #333333;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 11px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    letter-spacing: 0.4px;
+}
+
+.rest p a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.textoRest2 {
+    color: #000000CC;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 11px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.BlocoRest1 {
+    margin-top: 20px;
+    width: 820px;
+    height: 85px;
+    background-color: #202329;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 30px;
+}
+
+.textoBlocoRest1 {
+    color: #4CFF8F;
+    font-size:16px;
+    font-weight: 500;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoRest2 {
+    color: #ABB2BF;
+    font-size:16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    margin-left: 10px;
+}
+
+.BlocoRest2 {
+    width: 820px;
+    height: 176px;
+    background-color: #202329;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px;
+    justify-content: space-around;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoRest3, .textoBlocoRest13 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.BlocoRestSnippet1 {
+    display: flex;
+}
+
+.textoBlocoRest4, .textoBlocoRest7, .textoBlocoRest10 {
+    color: #FF79C6;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textodoisPontos1, .textodoisPontos2, .textodoisPontos3 {
+    color: #ABB2BF;
+    font-size: 16px;
+    margin: 0px 12px 0px 2px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-weight: normal;
+}
+
+.textoBlocoRest5, .textoBlocoRest8, .textoBlocoRest11 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}   
+
+.textoBlocoRest6, .textoBlocoRest9 {
+    color: #ABB2BF;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.BlocoRestSnippet2 {
+    display: flex;
+}
+
+.BlocoRestSnippet3 {
+    display: flex;
+}
+
+.textoRest3 {
+    color: #000000CC;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.textoRest4 {
+    color: #000000CC;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 11px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.textoRest4 a{
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.textoRest4 a:hover{
+    text-decoration: none;
+    color: orange;
+}
+
+.textoRest5 {
+    color: #000000CC;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 11px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.textoRest5 a{
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.textoRest5 a:hover{
+    text-decoration: none;
+    color: orange;
+}
+
+.textoRest6 {
+    color: #000000CC;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 11px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.textoRest6 a{
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.textoRest6 a:hover{
+    text-decoration: none;
+    color: orange;
+}
+
+.conteudoDocs {
+    margin-top: 65px;
+    width: 820px;
+}
+
+.textoPersonagem {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.textoCharacter1 {
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 11px;
+}
+
+.characterH3 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.characterTable {
+    width: 820px;
+    margin-top: 25px;
+}
+
+.characterTable th {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    padding-bottom: 20px;
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.characterTable tr td {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.characterTable td {
+    padding: 20px 0px;
+}
+
+.enumsCharacter {
+    width: 820px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statusBlock {
+    margin-top: 65px;
+}
+
+.genderBlock {
+    margin-top: 65px;
+}
+
+.characterStatusH3 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.enumStatusTable {
+    width: 390px;
+    margin-top: 25px;
+}
+
+.enumStatusTable th {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.enumStatusTable tr td {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    padding: 20px 20px;
+}
+
+.characterGenderH3 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.enumGenderTable {
+    width: 390px;
+    margin-top: 25px;
+    align-items: right;
+}
+
+.enumGenderTable th {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.enumGenderTable tr td {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    padding: 20px 20px;
+}
+
+.textoListarPersonagens {
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.blocoListarPersonagens1 {
+    margin-top: 20px;
+    width: 820px;
+    height: 85px;
+    background-color: #202329;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 30px;
+}
+
+.textoBlocoListar1 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoListar2 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    margin-left: 10px;
+}
+
+.snippetListarPersonagens {
+    margin-top: 1px;
+    width: 820px;
+    height: 300px;
+    background-color: #202329;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.blocoListarSnippet1, .blocoListarSnippet2, .blocoListarSnippet3, .blocoListarSnippet4, .blocoListarSnippet5, 
+.blocoListarSnippet6 {
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.textodoisPontosListar1, .textodoisPontosListar2, .textodoisPontosListar3, .textodoisPontosListar4, 
+.textodoisPontosListar5, .textodoisPontosListar6 {
+    color: #ABB2BF;
+    font-size: 16px;
+    margin: 0px 12px 0px 2px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-weight: normal;
+}
+
+.textoBlocoListarPersonagens3, .textoBlocoListarPersonagens5, .textoBlocoListarPersonagens7, 
+.textoBlocoListarPersonagens9, .textoBlocoListarPersonagens11, .textoBlocoListarPersonagens13 {
+    color: #FF79C6;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoListarPersonagens4 {
+    color: #F08d49;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoListarPersonagens6, .textoBlocoListarPersonagens8, 
+.textoBlocoListarPersonagens10, .textoBlocoListarPersonagens12, .textoBlocoListarPersonagens14 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoVirgula1, .textoBlocoVirgula2, .textoBlocoVirgula3, .textoBlocoVirgula4, .textoBlocoVirgula5 {
+    color: #ABB2BF;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-size: 16px;
+}
+
+.textoBlocoListarPersonagens1, .textoBlocoListarPersonagens2, .textoBlocoListarPersonagens15,
+.textoBlocoListarPersonagens16 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoListarPersonagens2, .textoBlocoListarPersonagens15 {
+    margin-left: 15px;
+}
+
+.characterH3Buscar {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.textoBuscarUmPersonagem {
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.blocoBuscarUmPersonagem1 {
+    margin-top: 20px;
+    width: 820px;
+    height: 85px;
+    background-color: #202329;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 30px;
+}
+
+.textoBlocoBuscar1 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoBuscar2 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    margin-left: 10px;
+}
+
+.snippetBuscarUmPersonagem {
+    margin-top: 1px;
+    width: 820px;
+    height: 300px;
+    background-color: #202329;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.blocoBuscarSnippet1, .blocoBuscarSnippet2, .blocoBuscarSnippet3, .blocoBuscarSnippet4, .blocoBuscarSnippet5, 
+.blocoBuscarSnippet6 {
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.textodoisPontosBuscar1, .textodoisPontosBuscar2, .textodoisPontosBuscar3, .textodoisPontosBuscar4, 
+.textodoisPontosBuscar5, .textodoisPontosBuscar6 {
+    color: #ABB2BF;
+    font-size: 16px;
+    margin: 0px 12px 0px 2px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-weight: normal;
+}
+
+.textoBlocoBuscarUmPersonagem3, .textoBlocoBuscarUmPersonagem5, .textoBlocoBuscarUmPersonagem7, 
+.textoBlocoBuscarUmPersonagem9, .textoBlocoBuscarUmPersonagem11, .textoBlocoBuscarUmPersonagem13 {
+    color: #FF79C6;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoBuscarUmPersonagem4 {
+    color: #F08d49;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoBuscarUmPersonagem6, .textoBlocoBuscarUmPersonagem8, .textoBlocoBuscarUmPersonagem10,
+.textoBlocoBuscarUmPersonagem12, .textoBlocoBuscarUmPersonagem14 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoBuscarVirgula1, .textoBlocoBuscarVirgula2, .textoBlocoBuscarVirgula3, .textoBlocoBuscarVirgula4, 
+.textoBlocoBuscarVirgula5 {
+    color: #ABB2BF;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-size: 16px;
+}
+
+.textoBlocoBuscarUmPersonagem1, .textoBlocoBuscarUmPersonagem2, .textoBlocoBuscarUmPersonagem15,
+.textoBlocoBuscarUmPersonagem16 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoBuscarUmPersonagem2, .textoBlocoBuscarUmPersonagem15 {
+    margin-left: 15px;
+}
+
+.characterH3Filtrar {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.textoFiltrarPersonagens1 {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.textoFiltrarPersonagens2 {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.textoFiltrarPersonagens3 {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.localizacaoH3 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.textoLocalizacao {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.tabelaLocalizacaoH3 { 
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.localizacaoTable {
+    width: 820px;
+    margin-top: 25px;
+}
+
+.localizacaoTable th {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    padding-bottom: 20px;
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.localizacaoTable tr td {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.localizacaoTable td {
+    padding: 20px 0px;
+}
+
+.localizacaoListarH3 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.textoListarLocalizacao {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.blocoListarLocalizacoes1 {
+    margin-top: 20px;
+    width: 820px;
+    height: 85px;
+    background-color: #202329;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 30px;
+}
+
+.textoBlocoListarLocalizacao1 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoListarLocalizacao2 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    margin-left: 10px;
+}
+
+.blocoListarLocalizacoes2 {
+    margin-top: 1px;
+    width: 820px;
+    height: 250px;
+    background-color: #202329;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.blocoListarLocalizacoesSnippet1, .blocoListarLocalizacoesSnippet2, .blocoListarLocalizacoesSnippet3, 
+.blocoListarLocalizacoesSnippet4 {
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.textodoisPontosBuscar1, .textodoisPontosBuscar2, .textodoisPontosBuscar3, .textodoisPontosBuscar4, 
+.textodoisPontosBuscar5, .textodoisPontosBuscar6 {
+    color: #ABB2BF;
+    font-size: 16px;
+    margin: 0px 12px 0px 2px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-weight: normal;
+}
+
+.textoBlocoListarLocalizacoes3, .textoBlocoListarLocalizacoes5, .textoBlocoListarLocalizacoes7, 
+.textoBlocoListarLocalizacoes9 {
+    color: #FF79C6;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoListarLocalizacoes4 {
+    color: #F08d49;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoListarLocalizacoes6, .textoBlocoListarLocalizacoes8, .textoBlocoListarLocalizacoes10 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoListarLocalizacoesVirgula1, .textoBlocoListarLocalizacoesVirgula2, 
+.textoBlocoListarLocalizacoesVirgula3 {
+    color: #ABB2BF;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-size: 16px;
+}
+
+.textoBlocoListarLocalizacoes1, .textoBlocoListarLocalizacoes2, .textoBlocoListarLocalizacoes11,
+.textoBlocoListarLocalizacoes12 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoListarLocalizacoes2, .textoBlocoListarLocalizacoes11 {
+    margin-left: 15px;
+}
+
+.localizacaoBuscarH3 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.textoBuscarLocalizacao {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.blocoBuscarUmaLocalizacao1 {
+    margin-top: 20px;
+    width: 820px;
+    height: 85px;
+    background-color: #202329;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 30px;
+}
+
+.textoBlocoBuscarUmaLocalizacao1 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoBuscarUmaLocalizacao2 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    margin-left: 10px;
+}
+
+.blocoBuscarUmaLocalizacao2 {
+    margin-top: 1px;
+    width: 820px;
+    height: 250px;
+    background-color: #202329;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.blocoBuscarUmaLocalizacaoSnippet1, .blocoBuscarUmaLocalizacaoSnippet2, .blocoBuscarUmaLocalizacaoSnippet3, 
+.blocoBuscarUmaLocalizacaoSnippet4 {
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.textodoisPontosBuscarUmaLocalizacao1, .textodoisPontosBuscarUmaLocalizacao2, 
+.textodoisPontosBuscarUmaLocalizacao3, .textodoisPontosBuscarUmaLocalizacao4 {
+    color: #ABB2BF;
+    font-size: 16px;
+    margin: 0px 12px 0px 2px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-weight: normal;
+}
+
+.textoBlocoBuscarUmaLocalizacao3, .textoBlocoBuscarUmaLocalizacao5, .textoBlocoBuscarUmaLocalizacao7, 
+.textoBlocoBuscarUmaLocalizacao9 {
+    color: #FF79C6;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoBuscarUmaLocalizacao4 {
+    color: #F08d49;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoBuscarUmaLocalizacao6, .textoBlocoBuscarUmaLocalizacao8, .textoBlocoBuscarUmaLocalizacao10 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoBuscarUmaLocalizacaoVirgula1, .textoBlocoBuscarUmaLocalizacaoVirgula2, 
+.textoBlocoBuscarUmaLocalizacaoVirgula3 {
+    color: #ABB2BF;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-size: 16px;
+}
+
+.textoBlocoBuscarUmaLocalizacao1, .textoBlocoBuscarUmaLocalizacao2, .textoBlocoBuscarUmaLocalizacao11,
+.textoBlocoBuscarUmaLocalizacao12 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoBuscarUmaLocalizacao2, .textoBlocoBuscarUmaLocalizacao11 {
+    margin-left: 15px;
+}
+
+.localizacaoH3Filtrar {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.textoFiltrarLocalizacoes1 {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.textoFiltrarLocalizacoes2 {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.textoFiltrarLocalizacoes3 {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.episodioH3 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.textoEpisodio {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.tabelaEpisodioH3 { 
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.episodioTable {
+    width: 820px;
+    margin-top: 25px;
+}
+
+.episodioTable th {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    padding-bottom: 20px;
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.episodioTable tr td {
+    color: #000000CC;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid hsla(0,0%,0%,0.12);
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.episodioTable td {
+    padding: 20px 0px;
+}
+
+.episodioListarH3 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.textoListarEpisodio {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.blocoListarOsEpisodios1 {
+    margin-top: 20px;
+    width: 820px;
+    height: 85px;
+    background-color: #202329;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 30px;
+}
+
+.textoBlocoListarOsEpisodios1 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoListarOsEpisodios2 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    margin-left: 10px;
+}
+
+.blocoListarOsEpisodios2 {
+    margin-top: 1px;
+    width: 820px;
+    height: 250px;
+    background-color: #202329;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.blocoListarOsEpisodiosSnippet1, .blocoListarOsEpisodiosSnippet2, .blocoListarOsEpisodiosSnippet3, 
+.blocoListarOsEpisodiosSnippet4 {
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.textodoisPontosListarOsEpisodios1, .textodoisPontosListarOsEpisodios2, 
+.textodoisPontosListarOsEpisodios3, .textodoisPontosListarOsEpisodios4 {
+    color: #ABB2BF;
+    font-size: 16px;
+    margin: 0px 12px 0px 2px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-weight: normal;
+}
+
+.textoBlocoListarOsEpisodios3, .textoBlocoListarOsEpisodios5, .textoBlocoListarOsEpisodios7, 
+.textoBlocoListarOsEpisodios9 {
+    color: #FF79C6;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoListarOsEpisodios4 {
+    color: #F08d49;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoListarOsEpisodios6, .textoBlocoListarOsEpisodios8, .textoBlocoListarOsEpisodios10 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoListarOsEpisodiosVirgula1, .textoBlocoListarOsEpisodiosVirgula2, 
+.textoBlocoListarOsEpisodiosVirgula3 {
+    color: #ABB2BF;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-size: 16px;
+}
+
+.textoBlocoListarOsEpisodios1, .textoBlocoListarOsEpisodios2, .textoBlocoListarOsEpisodios11,
+.textoBlocoListarOsEpisodios12 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoListarOsEpisodios2, .textoBlocoListarOsEpisodios11 {
+    margin-left: 15px;
+}
+
+.episodioBuscarH3 {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.textoBuscarEpisodio {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.blocoBuscarUmEpisodio1 {
+    margin-top: 20px;
+    width: 820px;
+    height: 85px;
+    background-color: #202329;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 30px;
+}
+
+.textoBlocoBuscarUmEpisodio1 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoBuscarUmEpisodio2 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    margin-left: 10px;
+}
+
+.blocoBuscarUmEpisodio2 {
+    margin-top: 1px;
+    width: 820px;
+    height: 250px;
+    background-color: #202329;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.blocoBuscarUmEpisodioSnippet1, .blocoBuscarUmEpisodioSnippet2, .blocoBuscarUmEpisodioSnippet3, 
+.blocoBuscarUmEpisodioSnippet4 {
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.textodoisPontosBuscarUmEpisodio1, .textodoisPontosBuscarUmEpisodio2, 
+.textodoisPontosBuscarUmEpisodio3, .textodoisPontosBuscarUmEpisodio4 {
+    color: #ABB2BF;
+    font-size: 16px;
+    margin: 0px 12px 0px 2px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-weight: normal;
+}
+
+.textoBlocoBuscarUmEpisodio3, .textoBlocoBuscarUmEpisodio5, .textoBlocoBuscarUmEpisodio7, 
+.textoBlocoBuscarUmEpisodio9 {
+    color: #FF79C6;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoBuscarUmEpisodio4 {
+    color: #F08d49;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    word-spacing: normal;
+}
+
+.textoBlocoBuscarUmEpisodio6, .textoBlocoBuscarUmEpisodio8, .textoBlocoBuscarUmEpisodio10 {
+    color: #4CFF8F;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoBuscarUmEpisodioVirgula1, .textoBlocoBuscarUmEpisodioVirgula2, 
+.textoBlocoBuscarUmEpisodioVirgula3 {
+    color: #ABB2BF;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-size: 16px;
+}
+
+.textoBlocoBuscarUmEpisodio1, .textoBlocoBuscarUmEpisodio2, .textoBlocoBuscarUmEpisodio11,
+.textoBlocoBuscarUmEpisodio12 {
+    color: #ABB2BF;
+    font-size: 16px;
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+
+.textoBlocoBuscarUmEpisodio2, .textoBlocoBuscarUmEpisodio11 {
+    margin-left: 15px;
+}
+
+
+.episodioH3Filtrar {
+    color: #000000CC;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 65px;
+}
+
+.textoFiltrarEpisodios1 {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.textoFiltrarEpisodios2 {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.textoFiltrarEpisodios3 {  
+    width: 820px;
+    color: #000000CC;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+footer {
+    height: 450px;
+    background-color: rgb(32, 35, 41);
+    padding: 4.5rem 0px;
+    width: 100%;
+    position: relative;
+}
+
+.conteudoFooter{
+    width: 100%;
+}
+
+.informacoes-parte1 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.conteudoFooter a {
+    padding: 7px 13px;
+    text-decoration: none;
+    color: rgb(158, 158, 158);
+    font-size: 15.5px;
+    font-weight: 700;
+}
+
+.serverStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bolaVerde {
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    background: rgb(85, 204, 68);
+    margin-left: 10px;
+}
+
+.informacoes-parte2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.2rem;
+}
+
+.iconGitHuba {
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}   
+
+.iconLinkedina {
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+.iconInstagrama {
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+.iconGitHub {
+    height: 21px;
+    width: 23px;
+}   
+
+.iconLinkedin {
+    height: 20px;
+    width: 21px;
+}
+
+.iconInstagram {
+    height: 20px;
+    width: 22px;
+}
+
+.netlifya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.netlify {
+    width: 127px;
+    height: 63px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.1rem;
+}
